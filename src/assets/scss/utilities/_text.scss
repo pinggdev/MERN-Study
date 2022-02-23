@@ -89,7 +89,7 @@
 }
 
 @each $color, $value in $grays {
-  @include text-emphasis-variant(".text-gray#{$color}", $value, true);
+  @include text-emphasis-variant(".text-gray-#{$color}", $value, true);
 }
 
 .text-body {
