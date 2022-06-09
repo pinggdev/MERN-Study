@@ -4,15 +4,15 @@ import propTypes from "prop-types";
 import { DateRange } from "react-date-range";
 
 import "./index.scss";
-import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 
-import formatDate from "utils/formatNumber";
-import iconCalender from "assets/images/icons/icon-calendar.svg";
+import formatDate from "utils/formatDate";
+import iconCalendar from "assets/images/icons/icon-calendar.svg";
 
 export default function Date(props) {
   const { value, placeholder, name } = props;
-  const { isShowed, setIsShowed } = useState(false);
+  const [isShowed, setIsShowed] = useState(false);
 
   const datePickerChange = (value) => {
     const target = {
@@ -55,7 +55,7 @@ export default function Date(props) {
       <div className="input-group">
         <div className="input-group-prepend bg-gray-900">
           <span className="input-group-text">
-            <img src={iconCalender} alt="icon calender" />
+            <img src={iconCalendar} alt="icon calendar" />
           </span>
         </div>
         <input
@@ -74,7 +74,7 @@ export default function Date(props) {
               onChange={datePickerChange}
               moveRangeOnFirstSelection={false}
               onRangeFocusChange={check}
-              ranges={value}
+              ranges={[value]}
             />
           </div>
         )}
