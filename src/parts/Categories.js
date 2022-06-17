@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 import Button from "elements/Button";
 import React from "react";
 
-export default function Category({ data }) {
+export default function Categories({ data }) {
   return data.map((category, index1) => {
     return (
       <section className="container" key={`category-${index1}`}>
