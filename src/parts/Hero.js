@@ -47,7 +47,7 @@ export default function Hero(props) {
                 <img
                   width="36"
                   height="36"
-                  src="/assets/images/icon-traveler.svg"
+                  src="/images/icon-traveler.svg"
                   alt={`${props.data.travelers} Travelers`}
                 />
                 <h6 className="mt-3">
@@ -61,7 +61,7 @@ export default function Hero(props) {
                 <img
                   width="36"
                   height="36"
-                  src="/assets/images/icon-trasure.svg"
+                  src="/images/icon-treasure.svg"
                   alt={`${props.data.treasures} Treasures`}
                 />
                 <h6 className="mt-3">
@@ -75,7 +75,7 @@ export default function Hero(props) {
                 <img
                   width="36"
                   height="36"
-                  src="/assets/images/icon-cities.svg"
+                  src="/images/icon-cities.svg"
                   alt={`${props.data.cities} Travelers`}
                 />
                 <h6 className="mt-3">
